@@ -4,67 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-</head>
-<body>
     
-    <div class="header-text">
-        <p class="header-title">Gallery</p>
-        <h1 class="header-name">でぃえる</h1>
-    </div>
+    <!-- CSS 초기화-->
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css"> 
+
+   <!-- 공통 디자인 CSS-->
+   <link href="css/main.css" rel="stylesheet">
+   <link href="css/gallery.css" rel="stylesheet">
+
+    <!-- 폰트 -->
+   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Hi+Melody&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous-basic.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body class="roll">
+    <header>
+    <div class="wrapper">
+        <a href="gallery.html" class="logo">でぃえる</a>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+    </header>
+
+
+    <section class="pixel-text">
+        <p class="pixel-title">------</p> <!--버튼에 가려짐, 글자크기 맞춤용-->
+        <h1 class="pixel-name">でぃえる</h1>
+    </section>
     <section class="pixel-art">
         <p class="pixel-title">Pixelart</p>
-        <main class="pixel">
-            <a class="pixel-gallery" href="images/dotpict_20180711_210041.png" data-aos="fade-up">
-                <img class="pixel-item"
+        <main class="grid">    
+            <a class="grid-gallery" href="images/pixel1.png" data-aos="fade-up">
+                <img class="grid-item"
                     src="images/pixel1.png"
                     srcset="images/pixel1.png 400w,
                             images/pixel1.png 800w"
                     alt="Cats look at fish">            
             </a>
-            <a class="grid-gallery"  href="images/img2-1600.jpg" data-aos="fade-up">
-                <img class="pixel-item"
+            <a class="grid-gallery"  href="images/pixel2.png" data-aos="fade-up">
+                <img class="grid-item"
                     src="images/pixel2.png"
                     srcset="images/pixel2.png 400w,
                             images/pixel2.png 800w"
                     alt="Autumn">  
             </a>
-            <a class="grid-gallery" href="images/img3-1600.jpg" data-aos="fade-up">
-                <img class="pixel-item"
+            <a class="grid-gallery" href="images/pixel3.png" data-aos="fade-up">
+                <img class="grid-item"
                     src="images/pixel3.png"
                     srcset="images/pixel3.png 400w,
                             images/pixel3.png 800w"
                     alt="Summer">  
             </a>
-            <a class="grid-gallery" href="images/img4-1600.jpg" data-aos="fade-up">
-                <img class="pixel-item"
+            <a class="grid-gallery" href="images/pixel4.png" data-aos="fade-up">
+                <img class="grid-item"
                     src="images/pixel4.png"
                     srcset="images/pixel4.png 400w,
                             images/pixel4.png 800w"
                     alt="Melting Duck ">  
             </a>
-            <a class="grid-gallery" href="images/img5-1600.jpg" data-aos="fade-up">
-                <img class="pixel-item"
+            <a class="grid-gallery" href="images/pixel5.png" data-aos="fade-up">
+                <img class="grid-item"
                     src="images/pixel5.png"
                     srcset="images/pixel5.png 400w,
                             images/pixel5.png 800w"
                     alt="Freeze!">  
             </a>
-            <a class="grid-gallery" href="images/img6-1600.jpg" data-aos="fade-up">
-                <img class="pixel-item"
+            <a class="grid-gallery" href="images/pixel6.png" data-aos="fade-up">
+                <img class="grid-item"
                     src="images/pixel6.png"
                     srcset="images/pixel6.png 400w,
                             images/pixel6.png 800w"
                     alt="Rest in Bees">  
             </a>
-            <a class="grid-gallery" href="images/img7-1600.jpg" data-aos="fade-up">
-                <img class="pixel-item"
+            <a class="grid-gallery" href="images/pixel7.png" data-aos="fade-up">
+                <img class="grid-item"
                     src="images/pixel7.png"
                     srcset="images/pixel7.png 400w,
                             images/pixel7.png 800w"
                     alt="沈潛">  
             </a>
-            <a class="grid-big-top grid-gallery"  href="images/img8-1600.jpg" data-aos="fade-up">
-                <img class="pixel-item"
+            <a class="grid-gallery"  href="images/pixel8.png" data-aos="fade-up">
+                <img class="grid-item"
                     src="images/pixel8.png"
                     srcset="images/pixel8.png 400w,
                             images/pixel8.png 800w"
@@ -77,30 +101,29 @@
    <section class="pixel-anime">
     <p class="anime-title">Anime Pixelart</p>
     <main class="anime">
-       
-        <a class="grid-gallery" href="images/img9-1600.jpg" data-aos="fade-up">
-            <img class="pixel-item"
+        <a class="grid-gallery" href="images/pixel9.png" data-aos="fade-up">
+            <img class="grid-item"
                 src="images/pixel9.png"
                 srcset="images/pixel9.png 400w,
                         images/pixel9.png 800w"
                 alt="『黒閃!』">  
         </a>
-        <a class="grid-gallery" href="images/img10-1600.jpg" data-aos="fade-up">
-            <img class="pixel-item"
+        <a class="grid-gallery" href="images/pixel10.png" data-aos="fade-up">
+            <img class="grid-item"
                 src="images/pixel10.png"
                 srcset="images/pixel10.png 400w,
                         images/pixel10.png 800w"
                 alt="『120%黒閃』">  
         </a>
-        <a class="grid-gallery" href="images/img10-1600.jpg" data-aos="fade-up">
-            <img class="pixel-item"
+        <a class="grid-gallery" href="images/pixel11.png" data-aos="fade-up">
+            <img class="grid-item"
                 src="images/pixel11.png"
                 srcset="images/pixel11.png 400w,
                         images/pixel11.png 800w"
                 alt="極ノ番 『隕』">  
         </a>
-        <a class="grid-gallery" href="images/img10-1600.jpg" data-aos="fade-up">
-            <img class="pixel-item"
+        <a class="grid-gallery" href="images/pixel12.png" data-aos="fade-up">
+            <img class="grid-item"
                 src="images/pixel12.png"
                 srcset="images/pixel12.png 400w,
                         images/pixel12.png 800w"
@@ -115,6 +138,9 @@
         <a href="https://www.pixiv.net/">Pixiv</a> 
     </p>
     <p class="copyright"><small>&copy; 2025 문화콘텐츠학과 202106013 장용길</small></p>
-</footer>
+    </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="js/script.js"></script>
 </body>
 </html>

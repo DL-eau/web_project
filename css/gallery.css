@@ -1,0 +1,75 @@
+:root {
+    --cream-brown : #52454d;
+    --white : #fff;
+    --black : #000;
+}
+
+img {
+    max-width: 50%;
+}
+
+.roll {
+    background-color: rgb(255, 244, 230);
+}
+.pixel-title {
+    text-align: center;
+    letter-spacing: .1rem;
+    font-size: 3rem;
+    padding: 1rem;
+    color: var(--black);
+    font-family: "DotGothic16", sans-serif;
+    font-style: normal;
+}
+
+.pixel-name {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 23px;
+    font-family: "DotGothic16", sans-serif;
+    font-style: normal;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: row dense;
+    gap: 20px;
+}
+
+.grid-item {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+    filter: grayscale(100%);
+    box-shadow: 8px 8px 24px rgb(2, 90, 102, .6);
+}
+
+.grid-item:hover{
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+.anime-title {
+    text-align: center;
+    letter-spacing: .1rem;
+    font-size: 3rem;
+    padding: 1rem;
+    padding-top: 10rem;
+    color: var(--black);
+    font-family: "DotGothic16", sans-serif;
+    font-style: normal;
+}
+.anime {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-rows: row dense;
+}
+
+.lum-lightbox.lum-open {
+    z-index: 4;
+}
+.lum-lightbox-inner img {
+    max-width: 120vw;
+    max-height: 80vh;
+}
